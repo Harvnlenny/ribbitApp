@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :relationships
   resources :ribbits
   get 'sessions/new'
 
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
 
   resources :users
+  resources :ribbits
 
   root to: 'users#new'
   # The priority is based upon order of creation: first created -> highest priority.
