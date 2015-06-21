@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :ribbits
+  resources :relationships
 
   root to: 'users#new'
   # The priority is based upon order of creation: first created -> highest priority.
